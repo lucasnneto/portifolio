@@ -8,9 +8,7 @@
         }"
         :to="tab.path"
       >
-        <template class="sm:text-red-600">
-          {{ nameState(tab) }}
-        </template>
+        {{ tab.name }}
       </router-link>
     </li>
   </ul>
@@ -19,28 +17,20 @@
 import Vue from "vue";
 interface ITab {
   name: string;
-  sigla: string;
   path: string;
 }
 export default Vue.extend({
   data: () => ({
     tabs: [
-      { name: "INICIO", sigla: "I", path: "/" },
-      { name: "HABILIDADES", sigla: "H", path: "/skill" },
-      { name: "PROJETOS", sigla: "P", path: "/project" },
-      { name: "SOBRE MIM", sigla: "S", path: "/about" },
+      { name: "INICIO", path: "/" },
+      { name: "HABILIDADES", path: "/skill" },
+      { name: "PROJETOS", path: "/project" },
+      { name: "SOBRE MIM", path: "/about" },
     ] as ITab[],
   }),
   computed: {
     pathAtual() {
       return this.$route.path;
-    },
-  },
-  methods: {
-    nameState(tab: ITab) {
-      if (!this.$isMobile.value) return tab.name;
-      if (this.pathAtual === tab.path) return tab.name;
-      return tab.sigla;
     },
   },
 });

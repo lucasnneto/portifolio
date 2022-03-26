@@ -21,10 +21,10 @@
     <tag />
     <router-link
       to="/skill"
-      class="absolute bottom-0 animate-bounce"
-      style="margin-left: 50%"
+      class="absolute bottom-0 z-10"
+      style="left: 50%; margin-left: -50px"
     >
-      <icon name="arrow" />
+      <icon class="animate-bounce" name="arrow" />
     </router-link>
     <icon name="dev" class="absolute bottom-0 right-0 mobile:-right-1/2" />
   </div>
