@@ -7,15 +7,15 @@
       @mouseenter="hoverGithub = true"
       @mouseleave="hoverGithub = false"
     >
-      <icon name="tagLeft" :color="hoverGithub ? 'primary' : 'black'" />
-      <icon name="github" :color="hoverGithub ? 'primary' : 'black'" />
+      <icon name="tagLeft" :color="hoverGithub ? '#009782' : 'black'" />
+      <icon name="github" :color="hoverGithub ? '#009782' : 'black'" />
       <p class="pl-2 text-lg font-bold text-primary" v-show="hoverGithub">
         Github
       </p>
       <icon
         class="pl-3"
         name="tagRight"
-        :color="hoverGithub ? 'primary' : 'black'"
+        :color="hoverGithub ? '#009782' : 'black'"
       />
     </a>
     <a
@@ -25,8 +25,8 @@
       @mouseenter="hoverLinkdin = true"
       @mouseleave="hoverLinkdin = false"
     >
-      <icon name="tagLeft" :color="hoverLinkdin ? 'primary' : 'black'" />
-      <icon name="linkdin" :color="hoverLinkdin ? 'primary' : 'black'" />
+      <icon name="tagLeft" :color="hoverLinkdin ? '#009782' : 'black'" />
+      <icon name="linkdin" :color="hoverLinkdin ? '#009782' : 'black'" />
 
       <p class="pl-2 text-lg font-bold text-primary" v-if="hoverLinkdin">
         Linkedin
@@ -35,7 +35,7 @@
       <icon
         class="pl-3"
         name="tagRight"
-        :color="hoverLinkdin ? 'primary' : 'black'"
+        :color="hoverLinkdin ? '#009782' : 'black'"
       />
     </a>
   </div>
