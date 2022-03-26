@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#app {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+}
+.subline-destaque {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  &::after {
+    content: "";
+    height: 4px;
+    @apply bg-primary;
+  }
+}

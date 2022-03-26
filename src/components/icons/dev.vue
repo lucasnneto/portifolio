@@ -1,5 +1,6 @@
 <template>
   <svg
+    class="fhd:w-[750px] fhd:h-auto"
     width="395"
     height="344"
     viewBox="0 0 395 344"
