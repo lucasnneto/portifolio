@@ -35,12 +35,16 @@ export default Vue.extend({
   }),
 });
 </script>
-<style scoped>
-::v-deep .tagA .icon svg path {
+<style>
+.tagA .icon svg path {
+  fill: black;
+}
+html.dark .tagA .icon svg path {
   fill: white;
 }
-::v-deep .tagA:hover .icon svg path {
-  fill: #009782;
+
+.tagA:hover .icon svg path {
+  fill: #009782 !important;
 }
 /* .tagA:hover .titleTag {
   width: 100%;
