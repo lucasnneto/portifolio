@@ -11,7 +11,9 @@
     <p class="text-2xl mobile:text-xl font-medium subline-destaque mb-2">
       DESENVOLVEDOR FULL-STACK
     </p>
-    <p class="text-2xl mobile:text-xs mobile:text-gray-500 mb-2">
+    <p
+      class="text-2xl mobile:text-xs mobile:text-gray-500 dark:mobile:text-gray-300 mb-2"
+    >
       Com ênfase em Front-end
     </p>
     <p class="text-sm fhd:text-lg mb-14">

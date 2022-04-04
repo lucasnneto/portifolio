@@ -8,10 +8,17 @@
   >
     <path
       d="M3.4375 5.3125H16.5625M3.4375 15.3125H16.5625H3.4375ZM3.4375 10.3125H16.5625H3.4375Z"
-      stroke="black"
       stroke-width="2.53125"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
   </svg>
 </template>
+<style scoped>
+svg path {
+  stroke: black;
+}
+html.dark svg path {
+  stroke: white;
+}
+</style>

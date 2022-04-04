@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="dark:bg-backgound-dark dark:text-white">
     <div
       class="h-full px-14 py-7 mobile:px-4 mobile:py-3 overflow-hidden flex flex-col justify-between relative"
     >
@@ -9,7 +9,10 @@
         </button>
         <dropMenu @closeModal="closeModal" v-if="modal" />
         <icon name="LN" />
-        <tabs v-if="!$isMobile.value" />
+        <div class="flex items-center">
+          <tabs v-if="!$isMobile.value" />
+          <theme />
+        </div>
       </div>
       <router-view class="h-full" />
     </div>
@@ -19,10 +22,22 @@
 import Vue from "vue";
 import tabs from "@/components/tabs.vue";
 import dropMenu from "@/components/dropMenu.vue";
+import theme from "@/components/theme.vue";
 export default Vue.extend({
   components: {
     tabs,
     dropMenu,
+    theme,
+  },
+  mounted() {
+    if (
+      this.$store.state.theme === "dark" ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   },
   data: () => ({
     modal: false,

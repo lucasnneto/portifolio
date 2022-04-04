@@ -1,7 +1,11 @@
 <template>
-  <div class="absolute z-40 bottom-0 left-0 bg-black/50 h-full w-full">
+  <div
+    class="absolute z-40 bottom-0 left-0 bg-black/50 dark:bg-white/50 h-full w-full"
+    @click="closeModal"
+  >
     <div
-      class="py-5 absolute z-50 top-0 left-0 bg-white h-full w-2/3 flex flex-col justify-between"
+      @click.prevent.stop
+      class="py-5 absolute z-50 top-0 left-0 bg-white dark:bg-backgound-dark h-full w-2/3 flex flex-col justify-between"
     >
       <div>
         <div class="px-3 mb-5 flex items-center">

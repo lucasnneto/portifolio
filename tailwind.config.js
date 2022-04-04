@@ -1,5 +1,6 @@
 //https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 module.exports = {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -8,6 +9,7 @@ module.exports = {
         fhd: { min: "1700px" },
       },
       colors: {
+        "backgound-dark": "#121212",
         primary: "#009782",
         secondary: "#00B89F",
         warning: "#FF5C00",

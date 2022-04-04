@@ -36,6 +36,9 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
+::v-deep .tagA .icon svg path {
+  fill: white;
+}
 ::v-deep .tagA:hover .icon svg path {
   fill: #009782;
 }
