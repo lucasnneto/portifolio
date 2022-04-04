@@ -19,13 +19,11 @@
       design e performance.
     </p>
     <tag />
-    <router-link
-      to="/skill"
-      class="absolute bottom-0 z-10"
-      style="left: 50%; margin-left: -50px"
-    >
-      <icon class="animate-bounce" name="arrow" />
-    </router-link>
+    <div class="w-full absolute bottom-0 z-10 flex justify-center">
+      <router-link to="/skill">
+        <icon class="animate-bounce" name="arrow" />
+      </router-link>
+    </div>
     <icon name="dev" class="absolute bottom-0 right-0 mobile:-right-1/2" />
   </div>
 </template>

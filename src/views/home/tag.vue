@@ -3,40 +3,26 @@
     <a
       href="https://github.com/lucasnneto"
       target="_blank"
-      class="flex items-center mobile:mb-5"
-      @mouseenter="hoverGithub = true"
-      @mouseleave="hoverGithub = false"
+      class="flex items-center mobile:mb-5 group tagA"
     >
-      <icon name="tagLeft" :color="hoverGithub ? '#009782' : 'black'" />
-      <icon name="github" :color="hoverGithub ? '#009782' : 'black'" />
-      <p class="pl-2 text-lg font-bold text-primary" v-show="hoverGithub">
-        Github
-      </p>
-      <icon
-        class="pl-3"
-        name="tagRight"
-        :color="hoverGithub ? '#009782' : 'black'"
-      />
+      <icon class="icon" name="tagLeft" />
+      <icon class="icon" name="github" />
+      <div class="w-0 group-hover:w-full truncate transition-all duration-400">
+        <p class="pl-2 text-lg font-bold group-hover:text-primary">Github</p>
+      </div>
+      <icon class="pl-3 icon" name="tagRight" />
     </a>
     <a
       href="https://www.linkedin.com/in/lucasnneto/"
       target="_blank"
-      class="flex items-center mobile:mb-5"
-      @mouseenter="hoverLinkdin = true"
-      @mouseleave="hoverLinkdin = false"
+      class="flex items-center mobile:mb-5 group tagA"
     >
-      <icon name="tagLeft" :color="hoverLinkdin ? '#009782' : 'black'" />
-      <icon name="linkdin" :color="hoverLinkdin ? '#009782' : 'black'" />
-
-      <p class="pl-2 text-lg font-bold text-primary" v-if="hoverLinkdin">
-        Linkedin
-      </p>
-
-      <icon
-        class="pl-3"
-        name="tagRight"
-        :color="hoverLinkdin ? '#009782' : 'black'"
-      />
+      <icon class="icon" name="tagLeft" />
+      <icon class="icon" name="linkdin" />
+      <div class="w-0 group-hover:w-full truncate transition-all duration-400">
+        <p class="pl-2 text-lg font-bold group-hover:text-primary">Linkedin</p>
+      </div>
+      <icon class="pl-3 icon" name="tagRight" />
     </a>
   </div>
 </template>
@@ -49,3 +35,11 @@ export default Vue.extend({
   }),
 });
 </script>
+<style scoped>
+::v-deep .tagA:hover .icon svg path {
+  fill: #009782;
+}
+/* .tagA:hover .titleTag {
+  width: 100%;
+} */
+</style>
