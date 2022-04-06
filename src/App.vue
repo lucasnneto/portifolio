@@ -34,9 +34,13 @@ export default Vue.extend({
       this.$store.state.theme === "dark" ||
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      document.documentElement.classList.add("dark");
+      this.$store.dispatch("CHANGE_THEME", {
+        theme: "dark",
+      });
     } else {
-      document.documentElement.classList.remove("dark");
+      this.$store.dispatch("CHANGE_THEME", {
+        theme: "light",
+      });
     }
   },
   data: () => ({
