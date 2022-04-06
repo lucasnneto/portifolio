@@ -30,9 +30,13 @@ export default Vue.extend({
     theme,
   },
   mounted() {
+    const theme = JSON.parse(
+      localStorage.getItem("lucas-portifolio") || "false"
+    );
     if (
+      theme?.theme === "dark" ||
       this.$store.state.theme === "dark" ||
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+      (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       this.$store.dispatch("CHANGE_THEME", {
         theme: "dark",

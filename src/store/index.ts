@@ -11,7 +11,7 @@ const vuexLocal = new VuexPersistence<any>({
 
 export default new Vuex.Store({
   state: {
-    theme: "light",
+    theme: "",
   },
   getters: {},
   mutations: {
