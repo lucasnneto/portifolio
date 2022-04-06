@@ -7,7 +7,7 @@
         <button @click="modal = !modal" v-if="$isMobile.value">
           <icon name="menuMobile" />
         </button>
-        <dropMenu @closeModal="closeModal" v-if="modal" />
+        <dropMenu @closeModal="closeModal" v-if="modal && $isMobile.value" />
         <icon name="LN" />
         <div class="flex items-center">
           <tabs v-if="!$isMobile.value" />
