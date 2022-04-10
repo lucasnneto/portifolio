@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         "backgound-dark": "#121212",
+        "card-dark": "#23222b",
         primary: "#009782",
         secondary: "#00B89F",
         warning: "#FF5C00",

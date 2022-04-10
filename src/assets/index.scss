@@ -17,6 +17,19 @@ body,
     font-family: "Roboto", sans-serif;
   }
 }
+@layer utilities {
+  .fill-path- {
+    &gray svg path {
+      @apply fill-gray-500 #{"!important"};
+    }
+    &primary svg path {
+      @apply fill-primary #{"!important"};
+    }
+    &secondary svg path {
+      @apply fill-secondary #{"!important"};
+    }
+  }
+}
 .subline-destaque {
   display: flex;
   flex-direction: column;
@@ -26,4 +39,8 @@ body,
     height: 4px;
     @apply bg-primary;
   }
+}
+
+html.dark svg path[fill="black"] {
+  @apply fill-white;
 }
