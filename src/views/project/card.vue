@@ -18,7 +18,11 @@
       >
         {{ project.describe }}
       </p>
-      <img style="max-height: 200px; max-width: 200px" :src="project.img" />
+      <img
+        style="max-height: 200px; max-width: 200px"
+        :src="project.img"
+        @error="imgUrlAlt"
+      />
     </div>
     <div class="flex ml-6">
       <a
@@ -65,6 +69,11 @@ export default Vue.extend({
     project: {
       required: true,
       type: Object as PropType<IProject>,
+    },
+  },
+  methods: {
+    imgUrlAlt(event: any) {
+      event.target.src = require("@/assets/icons/LN.svg");
     },
   },
 });

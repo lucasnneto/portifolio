@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Users",
     describe:
-      "Listagem semples de usuarios usando API Placehoder, com objetivo de estudar documentação usando storybook.",
+      "Listagem simples de usuários usando API Placehoder, com objetivo de estudar documentação usando storybook.",
     img: "https://iconarchive.com/download/i52489/custom-icon-design/pretty-office-8/Users.ico",
     link: "",
     git: "https://github.com/lucasnneto/users",
@@ -20,8 +20,8 @@ export const projects = [
   {
     name: "Study",
     describe:
-      "Projeto feito para monografia, com objetivo de auxiliar estudantes a estudarem programação.",
-    img: "https://i.ibb.co/hK2Kvpp/Frame-5.png",
+      "Projeto feito para monografia, com objetivo de auxiliar o estudo de programação.",
+    img: "https://i.postimg.cc/d3rMdCGB/Frame-5.png",
     link: "",
     git: "https://github.com/lucasnneto/study",
     type: "mobile",
