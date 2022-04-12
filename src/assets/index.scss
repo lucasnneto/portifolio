@@ -12,6 +12,13 @@ body,
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
 @layer base {
   html {
     font-family: "Roboto", sans-serif;

@@ -27,3 +27,24 @@ export const projects = [
     type: "mobile",
   },
 ];
+export const skills = {
+  front: [
+    { name: "HTML/CSS", icon: "html" },
+    { name: "Typescript", icon: "ts" },
+    { name: "VueJs", icon: "vue" },
+    { name: "ReactJs", icon: "react" },
+    { name: "Vuetify", icon: "vuetify" },
+    { name: "Tailwind", icon: "tailwind" },
+    { name: "Bootstrap", icon: "bootstrap" },
+    { name: "WebSocket", icon: "socket" },
+  ],
+  back: [
+    { name: "NodeJs", icon: "node" },
+    { name: "Express", icon: "express" },
+    { name: "MongoDB", icon: "mongo", warn: true },
+  ],
+  mobile: [
+    { name: "Flutter", icon: "flutter" },
+    { name: "React Native", icon: "rn", warn: true },
+  ],
+};
