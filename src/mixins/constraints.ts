@@ -26,6 +26,60 @@ export const projects = [
     git: "https://github.com/lucasnneto/study",
     type: "mobile",
   },
+  {
+    name: "Looker",
+    describe:
+      "Looker é uma aplicação web que tem a função de realizar testes em API. Projeto criado para estudos de Vuejs, Vuetify e o uso de requisições HTTP",
+    img: "https://lucasnneto.github.io/looker/img/logo.2b196bb6.svg",
+    link: "https://lucasnneto.github.io/looker/",
+    git: "https://github.com/lucasnneto/looker",
+    type: "front",
+  },
+  {
+    name: "Spin-dashboard",
+    describe:
+      "Spin-dashboard é uma pequena aplicação criada afim de estudar o uso de SVGs setando um valor em um spin e uma faixa, além de criar da criação de um relógio analógico dinâmico.",
+    img: "",
+    link: "https://lucasnneto.github.io/Spin-dashboard/",
+    git: "https://github.com/lucasnneto/Spin-dashboard",
+    type: "front",
+  },
+  {
+    name: "Mapas Google",
+    describe:
+      "Aplicação utilizando a API de mapas do Google, com opções para listagem, adição, remoção e edição de poligonos dentro do mapa",
+    img: "",
+    link: "",
+    git: "https://github.com/lucasnneto/mapa-google",
+    type: "front",
+  },
+  {
+    name: "Mapas Leaflet",
+    describe:
+      "Aplicação utilizando a biblioteca de mapas do Leaflet, com opções para listagem, adição, remoção e edição de poligonos dentro do mapa",
+    img: "",
+    link: "",
+    git: "https://github.com/lucasnneto/mapas",
+    type: "front",
+  },
+  {
+    name: "Calculadora",
+    describe:
+      "Aplicação utilizando react para estudos, com objetivo de criar uma calculadora simples.",
+    img: "",
+    link: "",
+    git: "https://github.com/lucasnneto/calculadora",
+    type: "front",
+  },
+  {
+    name: "Infinite Loading",
+    describe:
+      "Aplicação para estudos de carregamento infinito, utilizando a API do github.",
+    img: "",
+    link: "",
+    git: "https://github.com/lucasnneto/infiniteloading",
+    type: "front",
+  },
 ];
 export const skills = {
   front: [

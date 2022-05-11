@@ -19,7 +19,7 @@
         {{ project.describe }}
       </p>
       <img
-        style="max-height: 200px; max-width: 200px"
+        style="max-height: 200px; max-width: 200px; min-height: 150px"
         :src="project.img"
         @error="imgUrlAlt"
       />
