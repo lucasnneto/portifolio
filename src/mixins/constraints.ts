@@ -80,6 +80,15 @@ export const projects = [
     git: "https://github.com/lucasnneto/infiniteloading",
     type: "front",
   },
+  {
+    name: "AgroRadar",
+    describe:
+      "Site feito para Hackathon, com objetivo de realizar rastreio de todos de pragas.",
+    img: "https://agroradar.herokuapp.com/img/AgroRadar.c6f65635.png",
+    link: "https://agroradar.herokuapp.com",
+    git: "https://github.com/lucasnneto/hackathon",
+    type: "front",
+  },
 ];
 export const skills = {
   front: [
