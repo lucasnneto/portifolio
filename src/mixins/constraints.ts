@@ -76,7 +76,7 @@ export const projects = [
     describe:
       "Aplicação para estudos de carregamento infinito, utilizando a API do github.",
     img: "",
-    link: "",
+    link: "https://lucasnneto.github.io/infiniteloading/",
     git: "https://github.com/lucasnneto/infiniteloading",
     type: "front",
   },
