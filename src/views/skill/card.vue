@@ -12,12 +12,12 @@
       <p class="text-base font-bold whitespace-nowrap">
         {{ skill.name }}
       </p>
-      <div class="has-tooltip">
+      <div v-if="skill.warn" class="has-tooltip mobile:relative">
         <span
-          class="tooltip rounded shadow-lg p-1 dark:bg-white bg-backgound-dark dark:text-black text-white -mt-8 text-xs"
+          class="tooltip rounded shadow-lg p-1 dark:bg-white bg-backgound-dark dark:text-black text-white -mt-8 text-xs mobile:left-[-45px] mobile:top-[-5px]"
           >Conhecimentos Intermediário</span
         >
-        <icon name="warn" v-if="skill.warn" class="ml-1" />
+        <icon name="warn" class="ml-1" />
       </div>
     </div>
   </div>

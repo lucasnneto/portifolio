@@ -1,11 +1,13 @@
 <template>
   <div
-    class="absolute z-40 bottom-0 left-0 bg-black/50 dark:bg-white/50 h-full w-full"
+    class="transition duration-[0ms] delay-75 absolute z-40 bottom-0 left-0 bg-black/50 dark:bg-white/50 h-full w-full"
+    :class="value ? 'translate-x-0' : '-translate-x-full'"
     @click="closeModal"
   >
     <div
+      :class="value ? 'translate-x-0' : '-translate-x-full'"
       @click.prevent.stop
-      class="py-5 absolute z-50 top-0 left-0 bg-white dark:bg-backgound-dark h-full w-2/3 flex flex-col justify-between"
+      class="transition py-5 absolute z-50 top-0 left-0 bg-white dark:bg-backgound-dark h-full w-2/3 flex flex-col justify-between"
     >
       <div>
         <div class="px-3 mb-5 flex items-center">
@@ -41,6 +43,7 @@ interface ITab {
   path: string;
 }
 export default Vue.extend({
+  props: ["value"],
   data: () => ({
     tabs: [
       { name: "INICIO", path: "/" },
@@ -50,7 +53,7 @@ export default Vue.extend({
     ] as ITab[],
   }),
   computed: {
-    pathAtual() {
+    pathAtual(): string {
       return this.$route.path;
     },
   },

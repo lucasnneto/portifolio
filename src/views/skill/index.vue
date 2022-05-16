@@ -1,6 +1,6 @@
 <template>
   <div
-    class="about flex mobile:flex-col overflow-hidden mobile:overflow-auto mt-5"
+    class="about flex mobile:flex-col overflow-hidden mobile:overflow-auto mt-5 mobile:mt-0"
   >
     <list type="front" class="mobile:mb-14 mobile:mt-6" />
     <list type="back" class="mobile:mb-14" />

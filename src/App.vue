@@ -7,14 +7,23 @@
         <button @click="modal = !modal" v-if="$isMobile.value">
           <icon name="menuMobile" />
         </button>
-        <dropMenu @closeModal="closeModal" v-if="modal && $isMobile.value" />
+        <dropMenu
+          :value="modal"
+          @closeModal="closeModal"
+          v-if="$isMobile.value"
+        />
         <icon name="LN" />
         <div class="flex items-center">
           <tabs v-if="!$isMobile.value" />
           <theme />
         </div>
       </div>
-      <router-view class="h-full" />
+      <vue-page-transition
+        name="fade-in-up"
+        class="h-full d-flex overflow-hidden"
+      >
+        <router-view class="h-full" />
+      </vue-page-transition>
     </div>
   </div>
 </template>
@@ -57,3 +66,15 @@ export default Vue.extend({
   },
 });
 </script>
+<style>
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.5s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+</style>

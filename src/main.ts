@@ -5,6 +5,9 @@ import store from "./store";
 import "@/assets/index.scss";
 import "@/components/icons/imports";
 import isMobile from "@/plugins/isMobile";
+import VuePageTransition from "vue-page-transition";
+
+Vue.use(VuePageTransition);
 Vue.use(isMobile);
 Vue.config.productionTip = false;
 
