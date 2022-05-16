@@ -25,7 +25,7 @@ export default Vue.extend({
       { name: "INICIO", path: "/" },
       { name: "HABILIDADES", path: "/skill" },
       { name: "PROJETOS", path: "/project" },
-      // { name: "SOBRE MIM", path: "/about" },
+      { name: "SOBRE MIM", path: "/about" },
     ] as ITab[],
   }),
   computed: {
