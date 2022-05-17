@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4">
+  <div class="mt-4 flex flex-col">
     <h2
       class="transition ease-in-out text-5xl mobile:text-3xl mobile:mt-7 font-medium mb-5 text-center"
     >
@@ -47,7 +47,7 @@
         currículo
       </a>
     </div>
-    <div class="grid grid-cols-2 mobile:grid-cols-1 gap-3">
+    <div class="grid grid-cols-2 mobile:grid-cols-1 gap-3 overflow-auto">
       <div>
         <div class="bg-primary py-2 pl-4 flex items-center">
           <p class="text-xl text-white">Contato</p>
