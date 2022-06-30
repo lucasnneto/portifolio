@@ -2,7 +2,7 @@
   <ul>
     <li v-for="tab in tabs" :key="tab.name">
       <router-link
-        class="hover:font-bold hover:text-secondary text-xl"
+        class="hover:font-bold hover:text-secondary text-xl font-family-inter"
         :class="{
           'text-primary font-bold': pathAtual === tab.path,
         }"
